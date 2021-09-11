@@ -27,8 +27,8 @@ void punch_tape(char ch) {
 
 void translate(FILE * input_file, FILE * output_file) {
     static char num_set[10] = {NUM0, NUM1, NUM2, NUM3, NUM4, NUM5, NUM6, NUM7, NUM8, NUM9};
-    static char line[32];
-    while (fgets(line, 32, input_file) != NULL) {
+    static char line[120];
+    while (fgets(line, 120, input_file) != NULL) {
         int line_i = 0;
         char ch;
 
